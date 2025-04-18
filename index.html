@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <title>The Studio By Sari</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" /> -->
+
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="./images/Instagram1.png" alt="Main Image" />
+    </header>
+    <!-- Instagram QR and Profile Image -->
+    <section id="qr">
+        <div class="qr-container">
+            <div class="profile-image">
+                <img src="./images/PP1.jpeg" alt="Profile Image" />
+            </div>
+            <div class="qrEmailContainer">
+                <div class="qr-code">
+                    <div class="qr-codeInner">
+                        <h2 class="instaUsernameClass">Follow us on Instagram</h2>
+
+                        <img src="./images/insta1.jpeg" alt="Instagram QR Code" />
+                        <p class="instaUsernameClass"><a
+                                href="https://www.instagram.com/thestudiobysari?igsh=bm02MXRvMXMxcGUy"
+                                target="_blank">@THESTUDIOBYSARI</a></p>
+                        <p>Email: <a href="mailto:info@thestudiobysari.com">info@thestudiobysari.com</a></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery for smooth scroll -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top
+            }, 600);
+        });
+    </script>
+
+</body>
+
+</html>

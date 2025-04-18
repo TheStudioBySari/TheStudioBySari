@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'K2D';
+
+    /* font-family: 'Poppins', sans-serif; */
+    color: white;
+    background-color: #311c1b;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    height: auto;
+    width: 20%;
+    margin: 20px 20px;
+}
+
+
+@media (max-width: 1300px) {
+    header img {
+        width: 40%;
+    }
+
+    .profile-image {
+        text-align: center !important;
+    }
+
+    .profile-image img,
+    .qr-code img {
+        width: 70% !important;
+    }
+
+
+
+    .qr-code {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 840px) {
+    header img {
+        width: 50%;
+    }
+
+    .qr-code,
+    .qr-codeInner {
+        width: 100% !important;
+    }
+
+    .profile-image,
+    .qrEmailContainer {
+        width: 100% !important;
+        justify-content: center !important;
+        text-align: center !important;
+        margin-bottom: 20px;
+
+    }
+
+    .qr-code img {
+        width: 50% !important;
+    }
+
+    .qr-container {
+        margin-bottom: 30px;
+    }
+
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+section {
+    /* padding: 40px 20px; */
+    /* max-width: 670px; */
+    margin: auto;
+    text-align: center;
+}
+
+.qr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 40px; */
+    flex-wrap: wrap;
+    margin-top: 30px;
+    /* margin-bottom: 30px; */
+}
+
+.qr-codeInner {
+    width: 50%;
+}
+
+.qr-code {
+    display: flex;
+    justify-content: center;
+}
+
+.qr-code img {
+    width: 50%;
+    /* height: 50%; */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.qrEmailContainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image img {
+    width: 50%;
+    /* height: 50%; */
+    object-fit: cover;
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.instaUsernameClass {
+    margin-bottom: 10px;
+}
